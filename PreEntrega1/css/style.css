@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* para que se ajusten los elementos en bas e a lo que necesitamos */
+
+}
+
+:root {
+    --color-principal: antiquewhite;
+    --color-secundario: rgb(215, 126, 8);
+    --color-text: rgb(90, 53, 4);
+}
+
+body header img {
+    width: 5rem;
+    float: left;
+}
+
+
+body header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+body header nav ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+body header nav ul li {
+    padding: 1rem 2rem;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    background-color: var(--color-secundario);
+    color: var(--color-text);
+    cursor: pointer;
+
+
+    a {
+        text-decoration: none;
+        color: var(--color-principal);
+    }
+}
+
+
+li:hover {
+    background-color: var(--color-principal);
+
+    a {
+        color: var(--color-secundario);
+    }
+
+
+}
+
+footer {
+    background-color: blue;
+}
