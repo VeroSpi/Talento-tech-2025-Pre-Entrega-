@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre entrega Talento Tech</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"> <!-- favicon -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- 5 etiquetas -->
+
+    <header>
+        <!-- imagenes web son las liviana buscarlo en google con ese nombre -->
+        <!-- se pueden inesrta una imagen  -->
+        <h1>Mi tienda e commerce</h1>
+        <nav>
+            <!-- menu de navegacion  ( se hace con una lista) -->
+            <img src="../PreEntrega1/assets/img/cafe.png" alt="">
+            <ul>
+                <li>
+                    <!-- al agregar # va la a pagina de incio -->
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#Producto">Productos</a>
+                </li>
+                <li>
+                    <!-- el enumeran nos lleva a esa seccion en la pagina  -->
+                    <a href="#Contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="../PreEntrega1/carrito.html">Carrito</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- se agrega una imagn de e commerce (para utilizar como fondo del sitio) -->
+        <img src="./assets/img/descafeinado_web.jpg" alt="cafe y granos">
+        <h2>Tu café preferido
+            SIEMPRE CERCA
+            Blends, varietales, cafés del mundo.
+            Encontrá tu Tienda mas cercana y tentate con nuestros sabores.</h2>
+    </main>
+
+    <section id="Producto"> <!-- el id en css se trabaja con #y la palabra al lado -->
+        <h3>Nuestros Prodcutos</h3>
+
+        <div class="card">
+            <a href="pagina de descripcion del prodcuto">
+                <h4>Nombre del producto</h4>
+                <img src="https://picsum.photos/300/200?random-1" alt="producto1">
+                <p>Descripcion breve:</p>
+                <p>Precio:</p> <span><!-- span para distinguir el precio --> $xxxx</span>
+                <br>
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="pagina de descripcion del prodcuto">
+                <h4>Nombre del producto</h4>
+                <img src="https://picsum.photos/300/200?random-2" alt="producto1">
+                <p>Descripcion breve:</p>
+                <p>Precio:</p> <span><!-- span para distinguir el precio --> $xxxx</span>
+                <br>
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="pagina de descripcion del prodcuto">
+                <h4>Nombre del producto</h4>
+                <img src="https://picsum.photos/300/200?random-3" alt="producto1">
+                <p>Descripcion breve:</p>
+                <p>Precio:</p> <span><!-- span para distinguir el precio --> $xxxx</span>
+                <br>
+                <button>Comprar</button>
+            </a>
+        </div>
+
+
+        <div class="card">
+            <a href="pagina de descripcion del prodcuto">
+                <h4>Nombre del producto</h4>
+                <img src="https://picsum.photos/300/200?random-4" alt="producto1">
+                <p>Descripcion breve:</p>
+                <p>Precio:</p> <span><!-- span para distinguir el precio --> $xxxx</span>
+                <br>
+                <button>Comprar</button>
+            </a>
+        </div>
+
+
+        <div class="card">
+            <a href="pagina de descripcion del prodcuto">
+                <h4>Nombre del producto</h4>
+                <img src="https://picsum.photos/300/200?random-5" alt="producto1">
+                <p>Descripcion breve:</p>
+                <p>Precio:</p> <span><!-- span para distinguir el precio --> $xxxx</span>
+                <br>
+                <button>Comprar</button>
+            </a>
+        </div>
+
+    </section>
+
+    <section>
+        <form action="https://formbricks.com/" method="post">
+            <h3>¡Queremos saber de vos!
+                <br>
+                Contanos qué te pareció nuestro café y sé parte de nuestra comunidad cafetera.</h3>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required placeholder="Ingrese su nombre">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="mail" id="email" required placeholder="Ingrese su email">
+            <br>
+            <textarea name="mensaje" id="mensaje" rows="5" cols="20" placeholder="Danos tu opinión"></textarea>
+            <br>
+            <button type="submit">SUSCRIBIRME</button>
+        </form>
+    </section>
+
+    <section id="Contacto" class="contacto">
+        <div>
+            Contacto:
+            <br>
+            Casa central Argentina:
+            <br>
+            Dr. Tomas Maniel de Anchorena 1283,CABA
+
+        </div>
+        <div>
+            Seguinos:
+            <!-- se ingresa con los iconos de las redes -->
+            <br>
+            <i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #000000;">
+            </i>
+        </div>
+    </section>
+
+    <footer>
+
+        © Todos los derechos reservado.
+        <br>
+        Pre entrega Talento tech
+
+    </footer>
+
+</body>
+
+</html>
