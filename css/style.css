@@ -63,14 +63,26 @@ li:hover {
 }
 
 .card {
-    margin: 2rem;
+
+        margin: 2rem;
+    padding: 1rem;
     border: 0.25rem solid;
     border-radius: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* orden vertical */
+    align-items: center;
+    /* centra horizontalmente todo el contenido */
+    text-align: center;
+    /* centra los textos también */
+
 
 }
 
 .card p {
     font-size: 30px;
+      margin-top: 1rem;
 
 }
 
@@ -87,11 +99,17 @@ li:hover {
 }
 
 .card button {
-    border-radius: 1rem;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1rem;
+        display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* espacio entre ícono y texto */
     background-color: var(--color-principal);
+    color: white;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
 
 }
 
@@ -106,14 +124,27 @@ li:hover {
 
 }
 
+.card button img {
+    width: 30px;
+    height: 30px;
+}
 
+/* Efecto al pasar el mouse */
+.card button:hover {
+    background-color: #c66912c1;
+    /* un tono más oscuro o diferente */
+    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
+    /* sombra */
+    transform: translateY(-3px);
+    /* levanta un poco el botón */
+
+}
 section img {
 
     width: 300px;
     /* todas las img tiene 300px de ancho */
     height: auto;
     /* mantiene la proporción */
-
 
 }
 
