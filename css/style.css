@@ -149,30 +149,39 @@ section img {
 }
 
 
+
+main {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+}
+
 main .contenido {
-    border: 0.2rem solid;
-    margin: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* dos columnas: video y texto */
-    align-items: center;
-    /* alinea verticalmente */
-    justify-items: center;
-    border-radius: 1rem;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%; /* limita el ancho total */
+  width: 90%; /* hace que se vea bien en pantallas pequeñas */
+  background-color: rgb(220, 194, 159); /* opcional */
 }
 
 main video {
-    width: auto;
-    height: 100%;
-    border-radius: 1rem;
+  width: 100%;
+  max-width: 800px; /* antes era 450px, ahora más grande */
+  border-radius: 1rem;
 }
 
 main .texto {
-    padding: 3rem;
-    font-size: 20px;
-    text-align: left;
-    /* texto alineado a la izquierda */
+  padding: 1rem;
+  font-size: 20px;
+  text-align: left;
 }
+
 
 main img {
     background-size: cover;
