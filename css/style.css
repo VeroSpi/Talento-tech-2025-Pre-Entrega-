@@ -148,10 +148,39 @@ section img {
 
 }
 
-main {
-    color: rgb(234, 234, 234);
-    justify-content: center;
 
+main .contenido {
+    border: 0.2rem solid;
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* dos columnas: video y texto */
+    align-items: center;
+    /* alinea verticalmente */
+    justify-items: center;
+    border-radius: 1rem;
+}
+
+main video {
+    width: auto;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+main .texto {
+    padding: 3rem;
+    font-size: 20px;
+    text-align: left;
+    /* texto alineado a la izquierda */
+}
+
+main img {
+    background-size: cover;
+    /* Cubre todo el espacio disponible */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    width: 80%;
 }
 
 main img {
