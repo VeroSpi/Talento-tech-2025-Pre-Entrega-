@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: url(./assets/img/wallpaper-6380532.jpg);
+    background-image: url(../assets/img/wallpaper-6380532.jpg);
     background-size: cover;
     /* Ajusta la imagen al tamaño de la pantalla */
     background-repeat: no-repeat;
