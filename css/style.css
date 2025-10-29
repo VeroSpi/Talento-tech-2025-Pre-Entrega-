@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Story+Script&display=swap');
 
 
 * {
@@ -15,7 +15,26 @@
     --color-text: rgb(230, 230, 230);
 }
 
+body {
+    background-image: url(../assets/img/wallpaper-6380532.jpg);
+    background-size: cover;
+    /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    background-position: center;
+    /* Centra la imagen */
+
+}
+
 body header img {
+
+    height: 2rem;
+    width: 2rem;
+    align-items: end;
+}
+
+
+body header nav img {
     width: 5rem;
     float: left;
 }
@@ -51,10 +70,13 @@ body header nav ul li {
 
 
 li:hover {
-    background-color: var(--color-principal);
+
+    background-color: #df8632c1;
+    /* un tono más oscuro o diferente */
+    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
+    /* sombra */
     transform: translateY(-3px);
-    color: var(--color-text);
-    border: solid black;
+    /* levanta un poco el botón */
 
 }
 
@@ -63,8 +85,7 @@ li:hover {
 }
 
 .card {
-
-        margin: 2rem;
+    margin: 2rem;
     padding: 1rem;
     border: 0.25rem solid;
     border-radius: 15%;
@@ -77,12 +98,16 @@ li:hover {
     text-align: center;
     /* centra los textos también */
 
-
 }
 
+
+
 .card p {
-    font-size: 30px;
-      margin-top: 1rem;
+    font-size: 25px;
+    margin-top: 1rem;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+
 
 }
 
@@ -96,10 +121,13 @@ li:hover {
     gap: 1rem;
     justify-items: center;
     border: 1rem solid;
+
+
 }
 
+
 .card button {
-        display: flex;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
     /* espacio entre ícono y texto */
@@ -113,25 +141,18 @@ li:hover {
 
 }
 
-/* Efecto al pasar el mouse */
-.card button:hover {
-    background-color: #c66912c1;
-    /* un tono más oscuro o diferente */
-    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
-    /* sombra */
-    transform: translateY(-3px);
-    /* levanta un poco el botón */
 
-}
 
 .card button img {
     width: 30px;
     height: 30px;
+
+
 }
 
 /* Efecto al pasar el mouse */
 .card button:hover {
-    background-color: #c66912c1;
+    background-color: #df8632c1;
     /* un tono más oscuro o diferente */
     box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
     /* sombra */
@@ -139,6 +160,9 @@ li:hover {
     /* levanta un poco el botón */
 
 }
+
+
+
 section img {
 
     width: 300px;
@@ -146,50 +170,49 @@ section img {
     height: auto;
     /* mantiene la proporción */
 
-}
 
+}
 
 
 main {
-  display: flex;
-  justify-content: center; /* centra horizontalmente */
-  align-items: center;     /* centra verticalmente */
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
 }
 
 main .contenido {
-  border: 0.2rem solid;
-  border-radius: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 100%; /* limita el ancho total */
-  width: 90%; /* hace que se vea bien en pantallas pequeñas */
-  background-color: rgb(220, 194, 159); /* opcional */
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 100%;
+    /* limita el ancho total */
+    width: 90%;
+    /* hace que se vea bien en pantallas pequeñas */
+    background-color: rgb(220, 194, 159);
+    /* opcional */
 }
 
 main video {
-  width: 100%;
-  max-width: 800px; /* antes era 450px, ahora más grande */
-  border-radius: 1rem;
+    width: 100%;
+    max-width: 800px;
+    /* antes era 450px, ahora más grande */
+    border-radius: 1rem;
 }
 
 main .texto {
-  padding: 1rem;
-  font-size: 20px;
-  text-align: left;
-}
-
-
-main img {
-    background-size: cover;
-    /* Cubre todo el espacio disponible */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
-    width: 80%;
+    padding: 1rem;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+    font-style: oblique
 }
 
 main img {
@@ -202,22 +225,41 @@ main img {
 }
 
 main h2 {
-    position: absolute;
     /* Permite colocar el texto en cualquier parte */
     right: 30%;
     top: 50%;
-    font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Hace que el texto se lea mejor */
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: italic;
 }
+
+
 
 section form {
     padding: 2rem;
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
     border: 2px solid black;
     /* grosor | estilo | color */
     border-radius: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
 
+
+}
+
+section form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #614b36c1;
+    /* un tono más oscuro o diferente */
+    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
+    /* sombra */
+    transform: translateY(3px);
+    /* levanta un poco el botón */
 
 }
