@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre entrega Talento Tech</title>
+    <title>Brio - Tienda de Café</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"> <!-- favicon -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Story+Script&display=swap');
+    </style>
 </head>
-
 
 <body>
 
     <!-- 5 etiquetas -->
 
     <header>
-        <!-- imagenes web son las liviana buscarlo en google con ese nombre -->
-        <!-- se pueden inesrta una imagen  -->
+        <div>
+            <h1>Brio
+                <br>
+                Tinda de Café
+            </h1>
+            <img src="./assets/img/cafecarrito.png" alt="cafecarrito">
+        </div>
         <nav>
             <!-- menu de navegacion  ( se hace con una lista) -->
-            <img src="../PreEntrega1/assets/img/cafe.png" alt="">
             <ul>
                 <li>
                     <!-- al agregar # va la a pagina de incio -->
@@ -36,12 +41,21 @@
                     <a href="#Contacto">Contacto</a>
                 </li>
                 <li>
-                    <a href="./pages/Carrito.html">Carrito</a>
+                    <a onclick="handleCart()" href="./pages/Carrito.html">Carrito</a>
                 </li>
+                <li>
+                    <a onclick="handleCart()" href="./pages/Carrito.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
+                        </svg>
+                        <div class="count"></div>
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </header>
-
     <main>
         <div class="contenido">
             <video src="./assets/video/COFFEE MACRO & SLOW MOTION 4K.mp4" controls height="auto" width="auto"></video>
@@ -60,63 +74,71 @@
         </div>
     </main>
 
+    <section id="Producto" class="productos"> <!-- el id en css se trabaja con #y la palabra al lado -->
+        <h3>Algunos de Nuestros Productos</h3>
 
-    <section id="Producto"> <!-- el id en css se trabaja con #y la palabra al lado -->
-        <h3>Nuestros Prodcutos</h3>
+        <div class="card">
 
-        <div class="card">>
             <h4>Café Colombia</h4>
             <img src="./assets/img/card1.JPG" alt="cafe colombia">
-            <p>Combina el aroma intenso y la acidez equilibrada del café colombiano con la calidad artesanal del tostado
-                local. Ideal para quienes buscan una taza suave, aromática y con carácter.</p>
-
-            <span><!-- span para distinguir el precio --> $xxxx</span>
+            <p>
+                Combina el aroma intenso y la acidez equilibrada del café colombiano con la calidad artesanal del
+                tostado local. Ideal para quienes buscan una taza suave, aromática y con carácter.
+            </p>
+            <span>$50000</span>
             <br>
             <button>
                 <img src="./assets/img/carrito-de-compras.png" alt="carrito">
                 Agregar al carrito
             </button>
-
         </div>
 
         <div class="card">
+
             <h4>Café Scegliere</h4>
+
             <img src="./assets/img/card2.JPG" alt="cafe Scegliere">
-            <p> Una combinación única, lograda por la combinación de tres varietales: Bourbon, Colombia Supremo y Moka.
+
+            <p>
+                Una combinación única, lograda por la combinación de tres varietales: Bourbon, Colombia Supremo y Moka.
             </p>
-            <span><!-- span para distinguir el precio --> $xxxx</span>
-            <br>
+
+            <!-- precio dentro de un <p> y con un <span> -->
+            <span>$20000</span>
+
             <button>
                 <img src="./assets/img/carrito-de-compras.png" alt="carrito">
                 Agregar al carrito
             </button>
+
         </div>
 
         <div class="card">
-            <h4>Nombre del producto</h4>
-            <img src="https://picsum.photos/300/200?random-3" alt="producto1">
-            <p> descripcion breve
-            </p>
-            <span><!-- span para distinguir el precio --> $xxxx</span>
+            <h4>ddddddd</h4>
+            <img src="./assets/img/card3.JPG" alt="producto1">
+            <p>Descripcion breve:</p>
+            <span>$30000</span>
             <br>
             <button>
                 <img src="./assets/img/carrito-de-compras.png" alt="carrito">
-                Agregar al carrito
-            </button>
+
+                Agregar al carrito</button>
         </div>
 
 
         <div class="card">
-            <h4>Café Brasil</h4>
+            <h4>cafe brasil</h4>
             <img src="./assets/img/card4.JPG" alt="café Brasil">
             <p>Café de cuerpo suave, baja acidez.
-                Aconsejado para cafés filtrados</p>
-            <span><!-- span para distinguir el precio --> $xxxx</span>
+                Aconsejado para cafés filtrados
+            </p>
+            <span>$40000</span>
             <br>
             <button>
                 <img src="./assets/img/carrito-de-compras.png" alt="carrito">
                 Agregar al carrito
             </button>
+
         </div>
 
 
@@ -141,17 +163,17 @@
         </form>
     </section>
 
-    <section id="Contacto" class="contacto">
-        <div>
-            Contacto:
+    <section id="Contacto">
+        <div class="contacto">
+            CONTACTO:
             <br>
             Casa central Argentina:
             <br>
-            Dr. Tomas Maniel de Anchorena 1283,CABA
+            Dr. Tomas Maniel de Anchorena 1283, C.A.B.A
 
         </div>
         <div>
-            Seguinos:
+            SEGUINOS:
             <!-- se ingresa con los iconos de las redes -->
             <br>
             <i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #000000;">
@@ -161,11 +183,13 @@
 
     <footer>
 
-        © Todos los derechos reservado.
+        © Todos los derechos reservados.
         <br>
-        Pre entrega Talento tech
+        Entrega Talento tech
 
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 
