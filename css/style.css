@@ -67,13 +67,22 @@ header nav ul li:hover {
     transform: translateY(-3px);
 }
 header div img{
-    display: flex;
     gap: 5%;
     align-items: center;
     width: 50px;
     height: 50%;
     margin: 1rem;
+    border-radius: 25rem;
+    border: #000000 solid 0.1rem;
+
 }
+
+header div h1{
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(22, 13, 6);
+    font-size: 3rem;
+}
+
 
 /* ------------------- CARDS ------------------- */
 
