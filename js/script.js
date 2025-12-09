@@ -103,7 +103,7 @@ function limpiarCarrito() {
 
 }
 
-// Aplica CSS al botón "limpiar carrito"
+// Aplica CSS a la seccion del carrito
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.querySelector("button[onclick='limpiarCarrito()']");
     const titulo = document.querySelector("h2[titulo]");
