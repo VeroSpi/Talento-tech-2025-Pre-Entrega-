@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Story+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* para que se ajusten los elementos en base a lo que necesitamos */
     text-align: center;
 }
 
@@ -18,97 +16,96 @@
 body {
     background-image: url(../assets/img/wallpaper-6380532.jpg);
     background-size: cover;
-    /* Ajusta la imagen al tamaño de la pantalla */
     background-repeat: no-repeat;
-    /* Evita que se repita */
     background-position: center;
-    /* Centra la imagen */
-
+    font-family: Arial, sans-serif;
 }
 
-body header img {
+/* ------------------- HEADER ------------------- */
 
+header img {
     height: 2rem;
     width: 2rem;
-    align-items: end;
 }
 
-
-body header nav img {
+header nav img {
     width: 5rem;
     float: left;
 }
 
-
-body header nav {
+header nav {
     display: flex;
     justify-content: center;
     margin: 2rem auto;
 }
 
-body header nav ul {
-    align-items: center;
+header nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
     gap: 5%;
+    align-items: center;
+    
 }
 
-body header nav ul li {
+header nav ul li {
     padding: 1rem 2rem;
+    background-color: var(--color-secundario);
     border: 2px solid;
     border-radius: 0.5rem;
-    background-color: var(--color-secundario);
     cursor: pointer;
 
-
-    a {
-        text-decoration: none;
-        color: var(--color-text);
-    }
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    
+}
 
-li:hover {
-
+header nav ul li:hover {
     background-color: #df8632c1;
-    /* un tono más oscuro o diferente */
-    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
-    /* sombra */
     transform: translateY(-3px);
-    /* levanta un poco el botón */
-
 }
-
-.contacto {
+header div img{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    width: 50px;
+    height: 50%;
     margin: 1rem;
 }
 
+/* ------------------- CARDS ------------------- */
+
+.productos{
+    /* Usa Flexbox para la galería de cards */
+    display: flex;
+    /* Permite que las cards salten a la siguiente línea */
+    flex-wrap: wrap; 
+    /* Centra las cards horizontalmente */
+    justify-content: center; 
+    /* Espacio entre las cards */
+    gap: 20px; 
+    padding: 2rem 0;
+}
 .card {
+    display: flex;
     margin: 2rem;
     padding: 1rem;
     border: 0.25rem solid;
     border-radius: 15%;
-    text-align: center;
-    display: flex;
     flex-direction: column;
-    /* orden vertical */
     align-items: center;
-    /* centra horizontalmente todo el contenido */
-    text-align: center;
-    /* centra los textos también */
+    background-color: rgb(220, 194, 159);
+    justify-content: center;
 
 }
 
-
-
 .card p {
+    padding: 1rem;
     font-size: 25px;
     margin-top: 1rem;
     font-family: "Pacifico", cursive;
-    font-style: normal;
-
-
 }
 
 .card h4 {
@@ -117,11 +114,21 @@ li:hover {
 
 .card div {
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-items: center;
-    border: 1rem solid;
+    border: 0.5rem solid;
 
+    
+}
+
+.card  span{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(201, 121, 10);
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+    border: 0.2rem solid;
 
 }
 
@@ -130,7 +137,6 @@ li:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    /* espacio entre ícono y texto */
     background-color: var(--color-principal);
     color: white;
     border-radius: 8px;
@@ -138,48 +144,26 @@ li:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 15px;
-
 }
 
-
+.card button:hover {
+    background-color: #df8632c1;
+    transform: translateY(-3px);
+}
 
 .card button img {
     width: 30px;
     height: 30px;
-
-
-}
-
-/* Efecto al pasar el mouse */
-.card button:hover {
-    background-color: #df8632c1;
-    /* un tono más oscuro o diferente */
-    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
-    /* sombra */
-    transform: translateY(-3px);
-    /* levanta un poco el botón */
-
+    
 }
 
 
-
-section img {
-
-    width: 300px;
-    /* todas las img tiene 300px de ancho */
-    height: auto;
-    /* mantiene la proporción */
-
-
-}
-
+/* ------------------- MAIN ------------------- */
 
 main {
     display: flex;
     justify-content: center;
-    /* centra horizontalmente */
     align-items: center;
-    /* centra verticalmente */
 }
 
 main .contenido {
@@ -187,22 +171,14 @@ main .contenido {
     border-radius: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
     gap: 2rem;
     padding: 2rem;
-    max-width: 100%;
-    /* limita el ancho total */
     width: 90%;
-    /* hace que se vea bien en pantallas pequeñas */
     background-color: rgb(220, 194, 159);
-    /* opcional */
 }
 
 main video {
     width: 100%;
-    max-width: 800px;
-    /* antes era 450px, ahora más grande */
     border-radius: 1rem;
 }
 
@@ -211,43 +187,63 @@ main .texto {
     font-size: 20px;
     text-align: left;
     font-family: "Pacifico", cursive;
-    font-weight: 100;
-    font-style: oblique
+    font-style: oblique;
+}
+/* ------------------- SECCION CARRITO ------------------- */
+
+.titulo{
+    background-color: rgb(244, 207, 160);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: #000000 solid 0.1rem;    
 }
 
-main img {
-    background-size: cover;
-    /* Cubre todo el espacio disponible */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
-    width: 80%;
+#itemProducts {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: solid 2px #000000;
 }
 
-main h2 {
-    /* Permite colocar el texto en cualquier parte */
-    right: 30%;
-    top: 50%;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Hace que el texto se lea mejor */
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: italic;
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-carrito th {
+    background: #482f1f;
+    color: white;
+}
+
+.tabla-carrito th, 
+.tabla-carrito td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn-limpiar {
+    background: #b22222;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: black 2px 2px 5px;
+
 }
 
 
+/* ------------------- FORMULARIO ------------------- */
 
 section form {
     padding: 2rem;
     background-color: var(--color-secundario);
     border: 2px solid black;
-    /* grosor | estilo | color */
     border-radius: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-
-
 }
 
 section form button {
@@ -256,10 +252,82 @@ section form button {
     border-radius: 2rem;
     color: white;
     background-color: #614b36c1;
-    /* un tono más oscuro o diferente */
-    box-shadow: 5 10px 30px rgba(0, 0, 0, 0.2);
-    /* sombra */
-    transform: translateY(3px);
-    /* levanta un poco el botón */
+}
+
+/* ------------------- CONTACTO ------------------- */
+
+#Contacto {
+    margin-top: 2rem;
+    font-size: 20px;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    border: solid;
+    padding: 1rem;
+    background-color: rgba(150, 84, 23, 0.616);
+    text-align: center;
+    font-family: "Pacifico", cursive;
+}
+
+footer{
+    padding: 1rem;
+    background-color: var(--color-secundario);
+    border-top: 0.5rem solid;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Pacifico", cursive;
 
 }
+
+/* ------------------- RESPONSIVE ------------------- */
+
+/* Para tablets y teléfonos */
+
+@media (max-width: 600px) {
+
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        
+    }
+    
+    .card img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .card div {
+        grid-template-columns: 1fr;
+        /* una columna en celulares */
+        gap: 1rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        /* uno debajo del otro */
+        gap: 1rem;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        /* menú vertical */
+        gap: 0.8rem;
+    }
+    
+    .btn-carrito-nav {
+        width: 90%;
+        justify-content: center;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .btn-carrito-nav img {
+        width: 30px;
+        height: 30px;
+    }
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="shortcut icon" href="../assets/img/cafe.png" type="image/x-icon"> <!-- favicon -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- 5 etiquetas -->
+
+    <header>
+        <!-- imagenes web son las liviana buscarlo en google con ese nombre -->
+        <!-- se pueden inesrta una imagen  -->
+        <div>
+            <h1>Brio
+                <br>
+                Tinda de Café
+            </h1>
+            <img src="../assets/img/cafecarrito.png" alt="cafecarrito">
+        </div>
+        <nav>
+            <!-- menu de navegacion  ( se hace con una lista) -->
+            <ul>
+                <li>
+                    <!-- al agregar # va la a pagina de incio -->
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../index.html#Prodcuto">Productos</a>
+                </li>
+                <li>
+                    <!-- el enumeran nos lleva a esa seccion en la pagina  -->
+                    <a href="../index.html#Contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Carrito</a>
+                </li>
+                <li>
+                    <a onclick="handleCart()" href="./pages/Carrito.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
+                        </svg>
+                        <div class="count"></div>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="titulo">Mis Productos</h2>
+        <button onclick="limpiarCarrito()">Limpiar Carrito</button>
+    </section>
+
+    <section id="itemProducts"></section>
+
+
+
+    <section id="Contacto">
+        <div class="contacto">
+            CONTACTO:
+            <br>
+            Casa central Argentina:
+            <br>
+            Dr. Tomas Maniel de Anchorena 1283, C.A.B.A
+
+        </div>
+        <div>
+            SEGUINOS:
+            <!-- se ingresa con los iconos de las redes -->
+            <br>
+            <i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #000000;">
+            </i>
+        </div>
+    </section>
+
+    <footer>
+
+        © Todos los derechos reservados.
+        <br>
+        Entrega Talento tech
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+
+
+</body>
+
+</html>
