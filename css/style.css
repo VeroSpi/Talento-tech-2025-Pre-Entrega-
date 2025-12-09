@@ -53,12 +53,17 @@ header nav ul li {
     border: 2px solid;
     border-radius: 0.5rem;
     cursor: pointer;
+    box-shadow: black 2px 2px 5px;    
+
 
 }
 
 header nav ul li a {
     text-decoration: none;
     color: var(--color-text);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
     
 }
 
@@ -153,6 +158,8 @@ header div h1{
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 15px;
+    box-shadow: black 2px 2px 5px;    
+
 }
 
 .card button:hover {
